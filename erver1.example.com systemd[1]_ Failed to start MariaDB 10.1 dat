@@ -1,0 +1,17 @@
+[0;1;31m●[0m mariadb.service - MariaDB 10.1 database server
+   Loaded: loaded (/usr/lib/systemd/system/mariadb.service; enabled; vendor preset: disabled)
+   Active: [0;1;31mfailed[0m (Result: exit-code) since Fri 2017-04-28 19:28:13 IST; 15s ago
+  Process: 5471 ExecStopPost=/usr/libexec/mysql-wait-stop (code=exited, status=0/SUCCESS)
+  Process: 5442 ExecStart=/usr/libexec/mysqld --basedir=/usr $MYSQLD_OPTS $_WSREP_NEW_CLUSTER [0;1;31m(code=exited, status=1/FAILURE)[0m
+  Process: 5404 ExecStartPre=/usr/libexec/mysql-prepare-db-dir %n (code=exited, status=0/SUCCESS)
+  Process: 5379 ExecStartPre=/usr/libexec/mysql-check-socket (code=exited, status=0/SUCCESS)
+ Main PID: 5442 (code=exited, status=1/FAILURE)
+   Status: "MariaDB server is down"
+
+Apr 28 19:28:09 server1.example.com systemd[1]: Starting MariaDB 10.1 database server...
+Apr 28 19:28:09 server1.example.com mysql-prepare-db-dir[5404]: Database MariaDB is probably initialized in /var/lib/mysql already, nothing is done.
+Apr 28 19:28:09 server1.example.com mysqld[5442]: 2017-04-28 19:28:09 140334492698816 [Note] /usr/libexec/mysqld (mysqld 10.1.21-MariaDB) starting as process 5442 ...
+Apr 28 19:28:12 server1.example.com systemd[1]: [0;1;39mmariadb.service: Main process exited, code=exited, status=1/FAILURE[0m
+Apr 28 19:28:13 server1.example.com systemd[1]: [0;1;31mFailed to start MariaDB 10.1 database server.[0m
+Apr 28 19:28:13 server1.example.com systemd[1]: [0;1;39mmariadb.service: Unit entered failed state.[0m
+Apr 28 19:28:13 server1.example.com systemd[1]: [0;1;39mmariadb.service: Failed with result 'exit-code'.[0m

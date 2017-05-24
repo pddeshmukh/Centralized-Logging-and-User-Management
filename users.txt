@@ -1,0 +1,4 @@
+root
+fedora
+user
+abc
