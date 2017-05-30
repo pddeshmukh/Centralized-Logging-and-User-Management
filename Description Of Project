@@ -1,0 +1,29 @@
+Titel :GUI for  Centralize logging,backup and user management
+Technology : Python +GTK3 ,Glade , OS: Fedora 24
+Author : DESHMUKH PRATIK DINESHRAO
+         PUJARI VAISHNAVI BHIMRAO 
+         ANUSE MEGHA DATTATRAYA
+         MHETRE SANDHYA RAMESH
+         
+
+description:We reate GUI for Cerntral server for performing following function
+            1. Tacking log backup from remote client on central server
+            2. User Mangement from cental server.
+            3. Backup of central server to cloud
+            
+  1. Tacking log backup from remote client on central server:
+               -we can tack logs of single client or selecte multiple client at time
+               
+  2. User Mangement from cental server:
+               - we can add new user on remote client
+               - while adding user you can selecte 1.loging shell 2.home directory etc
+               - Deleting user
+               [Currntly not implemented user pemistion management module]
+  3.Backup of log :
+                 -Tacking Incremental backup Rsync over ssh 
+                 -curently Just collecting logs in zip file
+                 [Log fillteration is not implementes in current project] 
+                 
+                 
+               
+                              -
